@@ -1,0 +1,122 @@
+.cart {
+    width: 1200px;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+    &__back {
+        padding: 10px;
+        a{
+            :hover {
+                color: #fff !important;
+                border: none !important;
+            }
+            button {
+                height: 60px;
+                background-color: orange;
+                font-size: 16px;
+                color: #000;
+                font-weight: 600;
+                :hover {
+                    color: #fff !important;
+                    border: none !important;
+                }
+            }
+            
+        }
+       
+    }
+    &__item {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid gray;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    &__image {
+        margin-left: 20px;
+        width: 200px;
+        aspect-ratio: 4/3;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__infor {
+        flex: 1;
+        margin-left: 12px;
+    }
+    &__title {
+        color: green;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    &__decs{
+        font-size: 16px;
+        font-weight: 600;
+        color: gray;
+        margin-left: 20px;
+    }
+    &__price--new {
+        font-size: 24px;
+        font-weight: 700;
+        color: red;
+
+    }
+    &__price--old {
+        font-size: 18px;
+        color: #333;
+        font-weight: 600;
+        text-decoration: line-through;
+    }
+    &__quanity {
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__total {
+        padding: 30px 20px 10px 0;
+        text-align: end;
+        p{
+            color: #000;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        span {
+            color: red;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+    }
+    &__pay {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        padding: 0 20px 20px 0;
+    }
+    
+    &__button {
+        display: flex;
+        flex-flow: column nowrap ;
+        justify-content: center;
+        gap: 5px;
+    }
+    &__delete{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    &__finsh {
+        text-align: center;
+        color: green;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 20px;
+    }
+}
